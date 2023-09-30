@@ -16,6 +16,11 @@ $gameDetailsData = array(
     "Avoid - Reborn" => array(
         "status" => "Killed",
         "description" => "Full version of Aayush's popular game - <a href='https://cloudyin.itch.io/avoid' target='_blank'>Avoid</a>. Avoid also happens to be his first published game in Brackeys game jam."
+    ),
+
+    "TEST" => array(
+        "status" => "Killed",
+        "description" => "This is a test, lorem ipsum"
     )
 );
 
