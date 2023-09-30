@@ -1,3 +1,4 @@
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -6,18 +7,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font-family */
     background-color: #282a36;
-    color: #fafafa;
+    color: #f8f8f2; /* Dracula theme text color */
 }
 
 h1, h2 {
-    color: #ff79c6;
+    color: #bd93f9; /* Dracula theme heading color */
 }
 
 header, footer {
     background-color: #44475a;
-    color: #fff;
+    color: #f8f8f2; /* Dracula theme text color */
     text-align: center;
     padding: 20px 0;
 }
@@ -38,59 +39,47 @@ h2 {
 }
 
 .statusDead {
-    color: #ff5555;
+    color: #ff5555; /* Dracula theme danger color */
 }
 
 a {
-    color: #8be9fd;
+    color: #8be9fd; /* Dracula theme link color */
 }
-
 
 /* Add styling for the game cards */
 .game {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
-  overflow: hidden;
-}
-
-
-/* Add styling for the game cards */
-.game {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
+    background-color: #282a36; /* Dracula theme background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Style for the game details pop-up */
 .game .game-details {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #44475a; /* Dracula theme background color */
+    color: #f8f8f2; /* Dracula theme text color */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .game:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .game:hover .game-details {
-  display: block;
+    display: block;
 }
 
