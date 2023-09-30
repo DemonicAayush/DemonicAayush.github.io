@@ -52,14 +52,23 @@ a {
     color: #8be9fd;
 }
 
-@keyframes fadeIn {
+
+@keyframes moveParticle {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
   }
+}
+
+.particle {
+  position: absolute;
+  background-color: #ff5733; /* Adjust the particle color */
+  border-radius: 50%;
+  transform-origin: center;
+  opacity: 0;
 }
 
