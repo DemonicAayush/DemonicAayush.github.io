@@ -19,6 +19,7 @@ gameItems.forEach((item) => {
   });
 });
 
+
 $(document).ready(function () {
     // Select all game cards
     var gameCards = $(".game");
@@ -31,19 +32,17 @@ $(document).ready(function () {
                 // Get the game title
                 var gameTitle = $(this).find("h3").text();
 
-                // Send an AJAX request to fetch game details
-                $.ajax({
-                    url: "game-details.php", // Replace with the actual URL of your server-side script
-                    type: "GET",
-                    data: { title: gameTitle },
-                    success: function (data) {
-                        // Update the game details in the card
-                        $(this).find(".game-details").html(data);
-                    }.bind(this), // Ensure 'this' refers to the clicked game card
-                    error: function () {
-                        alert("Failed to fetch game details.");
-                    },
-                });
+                // Send an AJAX request to fetch game details from the JSON file
+                $.getJSON("https://demonicaayush.github.io/games.json", function (data) {
+                    if (data.hasOwnProperty(gameTitle)) {
+                        var gameDetails = data[gameTitle];
+                        var detailsHTML = "<p>Status: " + gameDetails.status + "</p>";
+                        detailsHTML += "<p>" + gameDetails.description + "</p>";
+                        $(this).find(".game-details").html(detailsHTML);
+                    } else {
+                        $(this).find(".game-details").html("Game details not found.");
+                    }
+                }.bind(this)); // Ensure 'this' refers to the clicked game card
             }
         });
     });
