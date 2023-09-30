@@ -37,13 +37,6 @@ h2 {
     margin-top: 20px;
 }
 
-.game {
-    /* border: 1px solid #ccc; */
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #fff;
-}
-
 .statusDead {
     color: #ff5555;
 }
@@ -53,22 +46,51 @@ a {
 }
 
 
-@keyframes moveParticle {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px) rotate(360deg);
-    opacity: 0;
-  }
+/* Add styling for the game cards */
+.game {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
-.particle {
+
+/* Add styling for the game cards */
+.game {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+/* Style for the game details pop-up */
+.game .game-details {
+  display: none;
   position: absolute;
-  background-color: #ff5733; /* Adjust the particle color */
-  border-radius: 50%;
-  transform-origin: center;
-  opacity: 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.game:hover .game-details {
+  display: block;
 }
 
