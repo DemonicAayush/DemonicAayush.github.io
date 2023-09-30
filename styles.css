@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -8,17 +10,17 @@
 
 body {
     font-family: 'Montserrat', sans-serif; /* Use Montserrat font-family */
-    background-color: #282a36;
-    color: #f8f8f2; /* Dracula theme text color */
+    background-color: #2e3440; /* Nord background color */
+    color: #d8dee9; /* Nord text color */
 }
 
 h1, h2 {
-    color: #bd93f9; /* Dracula theme heading color */
+    color: #81a1c1; /* Nord heading color */
 }
 
 header, footer {
-    background-color: #44475a;
-    color: #f8f8f2; /* Dracula theme text color */
+    background-color: #3b4252; /* Nord header/footer background color */
+    color: #d8dee9; /* Nord text color */
     text-align: center;
     padding: 20px 0;
 }
@@ -39,16 +41,16 @@ h2 {
 }
 
 .statusDead {
-    color: #ff5555; /* Dracula theme danger color */
+    color: #bf616a; /* Nord danger color */
 }
 
 a {
-    color: #8be9fd; /* Dracula theme link color */
+    color: #88c0d0; /* Nord link color */
 }
 
 /* Add styling for the game cards */
 .game {
-    background-color: #282a36; /* Dracula theme background color */
+    background-color: #2e3440; /* Nord background color */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -65,8 +67,8 @@ a {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #44475a; /* Dracula theme background color */
-    color: #f8f8f2; /* Dracula theme text color */
+    background-color: #3b4252; /* Nord background color */
+    color: #d8dee9; /* Nord text color */
     padding: 10px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
